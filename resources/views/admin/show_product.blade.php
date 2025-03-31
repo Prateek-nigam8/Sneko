@@ -45,8 +45,8 @@
                           <tr>
                             <th>Product Image</th>
                             <th>Category</th>
-                            <th>Price</th>
                             <th>Discount Price</th>
+                            <th>Price</th>
                             <th>Quantity</th>
                             <th>Processor</th>
                             <th>RAM</th>
@@ -62,8 +62,8 @@
                                     <img src="products_images/{{$product->image}}" alt="image" />
                                 </td>
                                 <td>{{$product->category}}</td>
-                                <td style="color: orange">${{$product->price}}</td>
-                                <td class="text-success">${{$product->discount_price}} <i class="mdi mdi-arrow-up"></i></td>
+                                <td style="color: orange">₹{{$product->price}}</td>
+                                <td class="text-success">₹{{$product->discount_price}} <i class="mdi mdi-arrow-up"></i></td>
                                 <td class="text-danger">{{$product->quantity}}</td>
                                 <td>{{$product->processor_type}} {{$product->processor}}</td>
                                 <td>{{$product->ram}}</td>

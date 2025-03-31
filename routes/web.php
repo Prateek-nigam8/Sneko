@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,7 +44,7 @@ route::get('/delete-user/{id}', [AdminController::class, 'DeleteUser']);
 Route::get('/search-user', [AdminController::class, 'SearchUser']);
 
 /* User routes */
-
+Route::post('/contact-form', [App\Http\Controllers\ContactController::class, 'sendEmail'])->name('contact.send');
 route::get('/', [HomeController::class, 'index']);
 route::get('/home', [HomeController::class, 'Home'])->name('home')->middleware('auth','verified');
 route::get('/my-account', [HomeController::class, 'UserAccount'])->name('user.account');

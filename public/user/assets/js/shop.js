@@ -93,5 +93,25 @@
     $(document).ready(function () {
         productDetails();
     });
+    
+    $("#tradeInForm").submit(function(e) {
+        e.preventDefault();
+    
+        $.ajax({
+            url: "/api/trade-in",
+            type: "POST",
+            data: $("#tradeInForm").serialize(),
+            headers: {
+                'Authorization': 'Bearer ' + localStorage.getItem('auth_token') // If using authentication
+            },
+            success: function(response) {
+                $("#tradeInValue").text("Estimated Trade-In Price: ₹" + response.estimated_price);
+            },
+            error: function() {
+                alert("Error processing trade-in request.");
+            }
+        });
+    });
+    
 
 })(jQuery);

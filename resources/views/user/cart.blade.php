@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CyberMart | My Cart</title>
+    <title>SNEKO | My Cart</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -62,14 +62,14 @@
                                         <td class="product-des product-name px-5">
                                             <h5 class="product-name px-5"><a href="{{url('product_details', $cart->product_id)}}">{{$cart->product_title}}</a></h5>
                                         </td>
-                                        <td class="price" data-title="Price"><span>${{$cart->price/$cart->quantity}} </span></td>
+                                        <td class="price" data-title="Price"><span>₹{{$cart->price/$cart->quantity}} </span></td>
                                         <td class="text-center" data-title="Stock">
                                             <div class="detail-qty border radius  m-auto">
                                                 <span class="qty-val">{{$cart->quantity}}</span>
                                             </div>
                                         </td>
                                         <td class="text-right" data-title="Cart">
-                                            <span>${{$cart->price}}</span>
+                                            <span>₹{{$cart->price}}</span>
                                         </td>
                                         <td class="action" data-title="Remove"><a onclick="confirmation(event)" href="{{url('remove-product-from-cart',$cart->id)}}" class="text-muted"><i class="fi-rs-trash"></i></a></td>
                                     </tr>
@@ -86,7 +86,7 @@
                         </div>
                         <div class="cart-action text-end">
                             <a class="btn " href="{{route('user.shop')}}"><i class="fi-rs-shopping-bag mr-10"></i>Continue Shopping</a>
-                            <a href="{{route('user.checkout')}}" class="btn"> <i class="fi-rs-box-alt mr-10"></i> Proceed to Checkout(${{$totalPrice}})</a>
+                            <a href="{{route('user.checkout')}}" class="btn"> <i class="fi-rs-box-alt mr-10"></i> Proceed to Checkout(₹{{$totalPrice}})</a>
                         </div>
                         <div class="divider center_icon mt-50 mb-50"><i class="fi-rs-fingerprint"></i></div>
                         <div class="row mb-50">
@@ -101,7 +101,7 @@
                                             <tbody>
                                                 <tr>
                                                     <td class="cart_total_label">Total</td>
-                                                    <td class="cart_total_amount"><strong><span class="font-xl fw-900 text-brand">${{$totalPrice}}</span></strong></td>
+                                                    <td class="cart_total_amount"><strong><span class="font-xl fw-900 text-brand">₹{{$totalPrice}}</span></strong></td>
                                                 </tr>
                                             </tbody>
                                         </table>

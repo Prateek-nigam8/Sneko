@@ -4,7 +4,7 @@
 <head>
     <base href="/public">
     <meta charset="utf-8">
-    <title>CyberMart | Product Details</title>
+    <title>SNEKO | Product Details</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -101,8 +101,8 @@
                                         </div>
                                         <div class="clearfix product-price-cover">
                                             <div class="product-price primary-color float-left">
-                                                <ins><span class="text-brand">${{$product->discount_price}}</span></ins>
-                                                <ins><span class="old-price font-md ml-15">${{$product->price}}</span></ins>
+                                                <ins><span class="text-brand">₹{{$product->discount_price}}</span></ins>
+                                                <ins><span class="old-price font-md ml-15">₹{{$product->price}}</span></ins>
                                                 <span class="save-price  font-md color3 ml-15">25% Off</span>
                                             </div>
                                         </div>

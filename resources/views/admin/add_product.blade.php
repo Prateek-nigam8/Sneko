@@ -202,17 +202,17 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Price</label>
+                                        <label class="col-sm-3 col-form-label">Discount Price</label>
                                         <div class="col-sm-9">
-                                            <input name="price" placeholder="ex: $1200" type="text" class="form-control" style="color: #fff" required/>
+                                            <input name="price" placeholder="ex: 10%" type="text" class="form-control" style="color: #fff" required/>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Discount Price</label>
+                                        <label class="col-sm-3 col-form-label">Price</label>
                                         <div class="col-sm-9">
-                                            <input name="discount_price" placeholder="ex: 10%" type="text" class="form-control" style="color: #fff" required/>
+                                            <input name="discount_price" placeholder="ex: ₹45000" type="text" class="form-control" style="color: #fff" required/>
                                         </div>
                                     </div>
                                 </div>

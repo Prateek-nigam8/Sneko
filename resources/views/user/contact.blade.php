@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CyberMart | Contact</title>
+    <title>SNEKO | Contact</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,17 +34,18 @@
                     <div class="col-xl-8 col-lg-10 m-auto">
                         <div class="contact-from-area padding-20-row-col wow FadeInUp">
                             <h3 class="mb-10 text-center">Drop Us a Line</h3>
-                            <p class="text-muted mb-30 text-center font-sm">Lorem ipsum dolor sit amet consectetur.</p>
-                            <form class="contact-form-style text-center" id="contact-form" action="#">
+                            <p class="text-muted mb-30 text-center font-sm">CONTACT US</p>
+                            <form class="contact-form-style text-center" id="contact-form" action="{{ route('contact.send') }}" method="POST">
+                                @csrf
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6">
                                         <div class="input-style mb-20">
-                                            <input name="name" placeholder="First Name" type="text">
+                                            <input name="name" placeholder="First Name" type="text" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="input-style mb-20">
-                                            <input name="email" placeholder="Your Email" type="email">
+                                            <input name="email" placeholder="Your Email" type="email" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
@@ -54,12 +55,12 @@
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="input-style mb-20">
-                                            <input name="subject" placeholder="Subject" type="text">
+                                            <input name="subject" placeholder="Subject" type="text" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="textarea-style mb-30">
-                                            <textarea name="message" placeholder="Message"></textarea>
+                                            <textarea name="message" placeholder="Message" required></textarea>
                                         </div>
                                         <button class="submit submit-auto-width" type="button">Send message</button>
                                     </div>
@@ -97,6 +98,8 @@
     <script src="user/assets/js/plugins/jquery.elevatezoom.js"></script>
     <!-- Template  JS -->
     <script src="user/assets/js/main.js?v=3.3"></script>
-    <script src="user/assets/js/shop.js?v=3.3"></script></body>
+    <script src="user/assets/js/shop.js?v=3.3"></script>
+    <script src="user/assets/js/contact.js"></script>
+</body>
 
 </html>

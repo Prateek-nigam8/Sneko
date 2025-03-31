@@ -9,13 +9,12 @@
                         </div>
                         <h5 class="mt-20 mb-10 fw-600 text-grey-4 wow fadeIn animated">Contact</h5>
                         <p class="wow fadeIn animated">
-                            <strong>Address: </strong>Kabaoğlu, Baki Komsuoğlu bulvarı No:515, Umuttepe, 41001 İzmit/Kocaeli
+                            <strong>Address: </strong> DELHI VK                        </p>
+                        <p class="wow fadeIn animated">
+                            <strong>Phone: </strong>9582716659
                         </p>
                         <p class="wow fadeIn animated">
-                            <strong>Phone: </strong>+905368703456
-                        </p>
-                        <p class="wow fadeIn animated">
-                            <strong>Email: </strong>contact@cybermart.in
+                            <strong>Email: </strong>Prateek7644@gmail.com
                         </p>
                         <h5 class="mb-10 mt-30 fw-600 text-grey-4 wow fadeIn animated">Follow Us</h5>
                         <div class="mobile-social-icon wow fadeIn animated mb-sm-5 mb-md-0">
@@ -68,7 +67,7 @@
             </div>
             <div class="col-lg-6">
                 <p class="text-lg-end text-start font-sm text-muted mb-0">
-                    &copy; <strong class="text-brand">CyberMart</strong> All rights reserved
+                    &copy; <strong class="text-brand">SNEKO</strong> All rights reserved
                 </p>
             </div>
         </div>

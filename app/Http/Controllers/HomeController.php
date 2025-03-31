@@ -457,6 +457,7 @@ class HomeController extends Controller
         $apiKey = env('NEWS_API_KEY');
         $response = Http::get("https://newsapi.org/v2/top-headlines?category=technology&language=en&pageSize=4&apiKey={$apiKey}");
         $data = $response->json();
+        $apiKey = '97e8b303c6334a67b70031f04786b049';
         $articles = $data['articles'];
         if(Auth::check()){
             $user_id = Auth::user()->id;

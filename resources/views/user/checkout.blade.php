@@ -61,14 +61,14 @@
                                         <td class="product-des product-name px-5">
                                             <h5 class="product-name px-5"><a href="{{url('product_details', $cart->product_id)}}">{{$cart->product_title}}</a></h5>
                                         </td>
-                                        <td class="price" data-title="Price"><span>${{$cart->price/$cart->quantity}} </span></td>
+                                        <td class="price" data-title="Price"><span>₹{{$cart->price/$cart->quantity}} </span></td>
                                         <td class="text-center" data-title="Stock">
                                             <div class="detail-qty border radius  m-auto">
                                                 <span class="qty-val">{{$cart->quantity}}</span>
                                             </div>
                                         </td>
                                         <td class="text-right" data-title="Cart">
-                                            <span>${{$cart->price}}</span>
+                                            <span>₹{{$cart->price}}</span>
                                         </td>
                                         <td class="action" data-title="Remove"><a href="{{url('remove-product-from-cart',$cart->id)}}" class="text-muted"><i class="fi-rs-trash"></i></a></td>
                                     </tr>

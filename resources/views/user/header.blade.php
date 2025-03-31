@@ -93,7 +93,7 @@
                                                     </div>
                                                     <div class="shopping-cart-title">
                                                         <h4><a href="{{url('product_details',$cart->product_id)}}">See Details</a></h4>
-                                                        <h4><span>{{$cart->quantity}} × </span>${{$cart->price/$cart->quantity}}</h4>
+                                                        <h4><span>{{$cart->quantity}} × </span>₹{{$cart->price/$cart->quantity}}</h4>
                                                     </div>
                                                     <div class="shopping-cart-delete">
                                                         <a href="#"><i class="fi-rs-cross-small"></i></a>
@@ -104,7 +104,7 @@
                                             </ul>
                                             <div class="shopping-cart-footer">
                                                 <div class="shopping-cart-total">
-                                                    <h4>Total <span>${{$totalPrice}}</span></h4>
+                                                    <h4>Total <span>₹{{$totalPrice}}</span></h4>
                                                 </div>
                                                 <div class="shopping-cart-button">
                                                     <a href="{{route('user.cart')}}" class="outline">View cart</a>
@@ -172,7 +172,7 @@
                     </div>
                 </div>
                 <div class="hotline d-none d-lg-block">
-                    <p><i class="fi-rs-smartphone"></i><span>Toll Free</span> (+90) 5367-934-046 </p>
+                    <p><i class="fi-rs-smartphone"></i><span>Give A Call on</span> 9582716659 </p>
                 </div>
             </div>
         </div>
